@@ -1,6 +1,6 @@
 //
 float DrawingSpaceX, DrawingSpaceY, DrawingSpaceWidth, DrawingSpaceHeight; 
-Boolean line;
+Boolean pen;
 void setup() {
   fullScreen();
   DrawingSpaceX = width * 0;
@@ -11,5 +11,5 @@ void setup() {
 }
 
 void draw() {
-  if( mouseX>DrawingSpaceX && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight );
+  if( pen == true && mouseX>DrawingSpaceX && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight );
 }
