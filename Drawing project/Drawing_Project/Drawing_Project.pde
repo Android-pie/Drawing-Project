@@ -1,9 +1,10 @@
 //
 float DrawingSpaceX, DrawingSpaceY, DrawingSpaceWidth, DrawingSpaceHeight; 
 float  penbuttonX, penbuttonY, penbuttonWidth, penbuttonHeight;
-float eraserX, eraserY, eraserWidth, eraserHeight;
+float eraserX, eraserY, eraserWidth, eraserHeight, eraserbuttonWidth,eraserbuttonHeight;
 Boolean pen = false;
 Boolean eraser = false;
+color black = #FFFFFF;
 void setup() {
   size(500, 400);
   DrawingSpaceX = width * 0;
@@ -16,8 +17,10 @@ void setup() {
   penbuttonHeight = height * 1/9;
   eraserX = width * 3/5;
   eraserY =  penbuttonY;
-  eraserWidth = penbuttonWidth;
-  eraserHeight = penbuttonHeight;
+  eraserbuttonWidth = penbuttonWidth;
+  eraserbuttonHeight = penbuttonHeight;
+  eraserWidth = width * 1/20;
+  eraserHeight = eraserWidth;
   rect(DrawingSpaceX, DrawingSpaceY, DrawingSpaceWidth, DrawingSpaceHeight);
 }
 
@@ -25,6 +28,13 @@ void draw() {
   rect(penbuttonX, penbuttonY, penbuttonWidth, penbuttonHeight);
   rect(eraserX, eraserY, eraserWidth, eraserHeight);
   if ( eraser == false && pen == true && mouseX>DrawingSpaceX && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight ) line(mouseX, mouseY, pmouseX, pmouseY);
+
+  if ( eraser == true && pen == false && mouseX>DrawingSpaceX && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight ) {
+   fill(black);
+   stroke(black);
+    rect(mouseX, mouseY, eraserWidth, eraserHeight);
+  
+  }
 }
 
 void mousePressed() {
@@ -33,12 +43,11 @@ void mousePressed() {
     pen = true;
     eraser = false;
   }
-  
-  if ( mouseX>eraserX && mouseX<eraserX + eraserWidth && mouseY>eraserY && mouseY<eraserY+eraserHeight ) {
+
+  if ( mouseX>eraserX && mouseX<eraserX + eraserbuttonWidth && mouseY>eraserY && mouseY<eraserY+eraserbuttonHeight ) {
     eraser = true;
     pen = false;
   }
-  
+
   println(eraser, pen);
-  
 }
