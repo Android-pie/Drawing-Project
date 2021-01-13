@@ -10,13 +10,16 @@ float YellowbuttonX, YellowbuttonY;
 float WhitebuttonX, WhitebuttonY;
 float PurplebuttonX, PurplebuttonY;
 float RectanglebuttonX, RectanglebuttonY;
+float  BackGroundX1, BackGroundY1, BackGroundWidth1, BackGroundHeight1;
+float  BackGroundX2, BackGroundY2, BackGroundWidth2, BackGroundHeight2;
 Boolean pen = false;
 Boolean eraser = false;
-color black = #000000, PenColour = #FFFFFF, Blue = #59A4E3, White = #FFFFFF, Green = #37C95A, Red = #DB1414, Orange = #FFA51C, Purple = #6E00D1, Yellow = #F0DF61;
+Boolean rectangle = false;
+color black = #000000, PenColour = #FFFFFF, Blue = #59A4E3, White = #FFFFFF, Green = #37C95A, Red = #DB1414, Orange = #FFA51C, Purple = #6E00D1, Yellow = #F0DF61, LightBlue = #BC08A4;
 void setup() {
   fullScreen();
   Varibles();
-  
+
   //
   //
   fill(black);
@@ -24,16 +27,22 @@ void setup() {
 }
 
 void draw() {
+  fill(LightBlue);
+  stroke(LightBlue);
+  rect(BackGroundX1, BackGroundY1, BackGroundWidth1, BackGroundHeight1);
+  fill(LightBlue);
+  stroke(LightBlue);
+  rect(BackGroundX2, BackGroundY2, BackGroundWidth2, BackGroundHeight2);
   buttons();
   if ( eraser == false && pen == true && mouseX>DrawingSpaceX && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight ) {
     stroke(PenColour);
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
 
-  if ( eraser == true && pen == false && mouseX> DrawingSpaceX  && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight) {   
+  if ( eraser == true && pen == false && rectangle == false && mouseX> DrawingSpaceX  && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight) {   
     fill(black);
     stroke(black);
-    rect(mouseX, mouseY, eraserWidth, eraserHeight);
+    ellipse(mouseX, mouseY, eraserWidth, eraserHeight);
   }
 }
 
@@ -41,5 +50,5 @@ void mousePressed() {
   PenColours();
   Eraser();
   pen();
-  println(eraser, pen);
+  println("eraser",eraser,"pen", pen, "rectangle", rectangle);
 }

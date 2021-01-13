@@ -17,5 +17,5 @@ void buttons() {
   fill(Yellow);
   rect(YellowbuttonX, YellowbuttonY, BluebuttonWidth, BluebuttonHeight);
   fill(black);
-  rect(RectanglebuttonX, rectanglebuttonY, BluebuttonWidth, BluebuttonHeight);
+  rect(RectanglebuttonX, RectanglebuttonY, BluebuttonWidth, BluebuttonHeight);
 }
