@@ -10,8 +10,9 @@ float YellowbuttonX, YellowbuttonY;
 float WhitebuttonX, WhitebuttonY;
 float PurplebuttonX, PurplebuttonY;
 float RectanglebuttonX, RectanglebuttonY;
-float  BackGroundX1, BackGroundY1, BackGroundWidth1, BackGroundHeight1;
-float  BackGroundX2, BackGroundY2, BackGroundWidth2, BackGroundHeight2;
+float RectangleWidth, RectangleHeight;
+float BackGroundX1, BackGroundY1, BackGroundWidth1, BackGroundHeight1;
+float BackGroundX2, BackGroundY2, BackGroundWidth2, BackGroundHeight2;
 Boolean pen = false;
 Boolean eraser = false;
 Boolean rectangle = false;
@@ -34,7 +35,7 @@ void draw() {
   stroke(LightBlue);
   rect(BackGroundX2, BackGroundY2, BackGroundWidth2, BackGroundHeight2);
   buttons();
-  if ( eraser == false && pen == true && mouseX>DrawingSpaceX && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight ) {
+  if ( eraser == false && pen == true && rectangle == false && mouseX>DrawingSpaceX && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight ) {
     stroke(PenColour);
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
@@ -43,6 +44,12 @@ void draw() {
     fill(black);
     stroke(black);
     ellipse(mouseX, mouseY, eraserWidth, eraserHeight);
+  }
+  
+  if ( eraser == false && pen == false && rectangle == true && mouseX> DrawingSpaceX  && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight) {   
+    fill(black);
+    stroke(black);
+    rect(mouseX, mouseY, RectangleWidth, RectangleHeight);
   }
 }
 
