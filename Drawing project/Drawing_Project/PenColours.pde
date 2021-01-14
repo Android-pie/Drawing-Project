@@ -31,5 +31,4 @@ void PenColours() {
   if ( mouseX>YellowbuttonX && mouseX<YellowbuttonX + BluebuttonWidth && mouseY>YellowbuttonY && mouseY<YellowbuttonY+BluebuttonHeight ) {
     PenColour = Yellow;
   }
-
 }

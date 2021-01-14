@@ -10,6 +10,7 @@ float YellowbuttonX, YellowbuttonY;
 float WhitebuttonX, WhitebuttonY;
 float PurplebuttonX, PurplebuttonY;
 float RectanglebuttonX, RectanglebuttonY;
+float CircleX, CircleY;
 float RectangleWidth, RectangleHeight;
 float BackGroundX1, BackGroundY1, BackGroundWidth1, BackGroundHeight1;
 float BackGroundX2, BackGroundY2, BackGroundWidth2, BackGroundHeight2;
@@ -20,10 +21,7 @@ color black = #000000, PenColour = #FFFFFF, Blue = #59A4E3, White = #FFFFFF, Gre
 void setup() {
   fullScreen();
   Varibles();
-
-  //
-  //
-  fill(black);
+  fill(White);
   rect(DrawingSpaceX, DrawingSpaceY, DrawingSpaceWidth, DrawingSpaceHeight);
 }
 
@@ -45,10 +43,10 @@ void draw() {
     stroke(black);
     ellipse(mouseX, mouseY, eraserWidth, eraserHeight);
   }
-  
+
   if ( eraser == false && pen == false && rectangle == true && mouseX> DrawingSpaceX  && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight) {   
-    fill(black);
-    stroke(black);
+    fill(PenColour);
+    stroke(PenColour);
     rect(mouseX, mouseY, RectangleWidth, RectangleHeight);
   }
 }
@@ -57,5 +55,7 @@ void mousePressed() {
   PenColours();
   Eraser();
   pen();
-  println("eraser",eraser,"pen", pen, "rectangle", rectangle);
+  rectangle();
+  circlePen();
+  println("eraser", eraser, "pen", pen, "rectangle", rectangle);
 }
