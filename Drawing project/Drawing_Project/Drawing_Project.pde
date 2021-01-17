@@ -14,6 +14,8 @@ float CircleX, CircleY;
 float RectangleWidth, RectangleHeight;
 float BackGroundX1, BackGroundY1, BackGroundWidth1, BackGroundHeight1;
 float BackGroundX2, BackGroundY2, BackGroundWidth2, BackGroundHeight2;
+float BackGroundX3, BackGroundY3, BackGroundWidth3, BackGroundHeight3;
+float BackGroundWidth4, BackGroundHeight4;
 Boolean pen = false;
 Boolean eraser = false;
 Boolean rectangle = false;
@@ -21,7 +23,7 @@ color black = #000000, PenColour = #FFFFFF, Blue = #59A4E3, White = #FFFFFF, Gre
 void setup() {
   fullScreen();
   Varibles();
-  fill(White);
+  fill(black);
   rect(DrawingSpaceX, DrawingSpaceY, DrawingSpaceWidth, DrawingSpaceHeight);
 }
 
@@ -32,6 +34,12 @@ void draw() {
   fill(LightBlue);
   stroke(LightBlue);
   rect(BackGroundX2, BackGroundY2, BackGroundWidth2, BackGroundHeight2);
+  fill(LightBlue);
+  stroke(LightBlue);
+  rect(BackGroundX3, BackGroundY3, BackGroundWidth3, BackGroundHeight3);
+  fill(LightBlue);
+  stroke(LightBlue);
+  rect(BackGroundX3, BackGroundY3, BackGroundWidth4, BackGroundHeight4);
   buttons();
   if ( eraser == false && pen == true && rectangle == false && mouseX>DrawingSpaceX && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight ) {
     stroke(PenColour);

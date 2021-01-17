@@ -7,6 +7,12 @@ void Varibles() {
   BackGroundY2 = height * 0;
   BackGroundWidth2 = width * 1/3;
   BackGroundHeight2 = height;
+  BackGroundX3 = width * 0;
+  BackGroundY3 = height * 0;
+  BackGroundWidth3 = width * 1/50;
+  BackGroundHeight3 = height;
+  BackGroundWidth4 = width;
+  BackGroundHeight4 = height * 1/50;
   DrawingSpaceX = width * 1/50;
   DrawingSpaceY = height * 1/50;
   DrawingSpaceWidth = width * 2/3;
