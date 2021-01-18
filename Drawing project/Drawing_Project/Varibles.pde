@@ -40,7 +40,7 @@ void Varibles() {
   BluebuttonY = GreenbuttonY =  RedbuttonY = WhitebuttonY = OrangebuttonY = PurplebuttonY = YellowbuttonY = height * 3.35/5;
   BluebuttonWidth = BluebuttonHeight = penbuttonWidth/2;
   //
-  thickness = width * 1/200;
+  thickness = width * 1/900;
   thicknessbuttonWidth = width * 1/40;
   thicknessbuttonHeight = thicknessbuttonWidth;
   thicknessbuttonY = height * 1/2;
