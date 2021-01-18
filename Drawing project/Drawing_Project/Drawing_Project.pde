@@ -75,6 +75,6 @@ void mousePressed() {
   pen();
   rectangle();
   circlePen();
-  thickness();
+  penThickness();
   println("eraser", eraser, "pen", pen, "rectangle", rectangle);
 }

@@ -1,4 +1,4 @@
-void thickness() {
+void penThickness() {
   if ( mouseX>thicknessbuttonX1 && mouseX<thicknessbuttonX1 + thicknessbuttonWidth && mouseY>thicknessbuttonY && mouseY<thicknessbuttonY+thicknessbuttonHeight ) {
     thickness = width * 1/900;
   }
