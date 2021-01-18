@@ -18,4 +18,23 @@ void buttons() {
   rect(YellowbuttonX, YellowbuttonY, BluebuttonWidth, BluebuttonHeight);
   fill(black);
   rect(RectanglebuttonX, RectanglebuttonY, BluebuttonWidth, BluebuttonHeight);
+
+  // thickness buttons
+
+  fill(black);
+  rect(thicknessbuttonX1, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  fill(black);
+  rect(thicknessbuttonX2, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  fill(black);
+  rect(thicknessbuttonX3, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  fill(black);
+  rect(thicknessbuttonX4, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  fill(black);
+  rect(thicknessbuttonX5, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  fill(black);
+  rect(thicknessbuttonX6, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  fill(black);
+  rect(thicknessbuttonX7, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  fill(black);
+  rect(thicknessbuttonX8, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
 }

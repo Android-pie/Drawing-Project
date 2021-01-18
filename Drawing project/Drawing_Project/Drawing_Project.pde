@@ -16,6 +16,15 @@ float BackGroundX1, BackGroundY1, BackGroundWidth1, BackGroundHeight1;
 float BackGroundX2, BackGroundY2, BackGroundWidth2, BackGroundHeight2;
 float BackGroundX3, BackGroundY3, BackGroundWidth3, BackGroundHeight3;
 float BackGroundWidth4, BackGroundHeight4;
+float thickness;
+float thicknessbuttonX1, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight;
+float thicknessbuttonX2;
+float thicknessbuttonX3;
+float thicknessbuttonX4;
+float thicknessbuttonX5;
+float thicknessbuttonX6;
+float thicknessbuttonX7;
+float thicknessbuttonX8;
 Boolean pen = false;
 Boolean eraser = false;
 Boolean rectangle = false;
@@ -43,6 +52,7 @@ void draw() {
   buttons();
   if ( eraser == false && pen == true && rectangle == false && mouseX>DrawingSpaceX && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight ) {
     stroke(PenColour);
+    strokeWeight(thickness);
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
 
