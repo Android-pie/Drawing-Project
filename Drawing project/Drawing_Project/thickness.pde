@@ -1,6 +1,14 @@
 void penThickness() {
   if ( mouseX>thicknessbuttonX1 && mouseX<thicknessbuttonX1 + thicknessbuttonWidth && mouseY>thicknessbuttonY && mouseY<thicknessbuttonY+thicknessbuttonHeight ) {
     thickness = width * 1/900;
+    selection1 = Green;
+    selection2 = black;
+    selection3 = black;
+    selection4 = black;
+    selection5 = black;
+    selection6 = black;
+    selection7 = black;
+    selection8 = black;
   }
   
   if ( mouseX>thicknessbuttonX2 && mouseX<thicknessbuttonX2 + thicknessbuttonWidth && mouseY>thicknessbuttonY && mouseY<thicknessbuttonY+thicknessbuttonHeight ) {
