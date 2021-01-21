@@ -16,10 +16,16 @@ void buttons() {
   rect(PurplebuttonX, PurplebuttonY, BluebuttonWidth, BluebuttonHeight);
   fill(Yellow);
   rect(YellowbuttonX, YellowbuttonY, BluebuttonWidth, BluebuttonHeight);
+  
+  //Shapes
   fill(black);
   rect(RectanglebuttonX, RectanglebuttonY, BluebuttonWidth, BluebuttonHeight);
   fill(black);
   rect(CircleX, CircleY, BluebuttonWidth, BluebuttonHeight);
+  
+  //Erase All
+  fill(black);
+  rect(eraseAllX, eraseAllY, eraseAllbuttonWidth, eraseAllbuttonHeight);
 
   // thickness buttons
  stroke(selection1);

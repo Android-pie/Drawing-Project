@@ -74,6 +74,9 @@ void Varibles() {
   CircleY = width * 4/10;
   CirclePenWidth = CirclePenHeight = thickness * 50;
   //
+  eraseAllX = width * 6/10;
+  eraseAllY = width * 4/10;
+  eraseAllbuttonWidth = eraseAllbuttonHeight = BluebuttonHeight;
   //
   thickness = width * 1/900;
   thicknessbuttonWidth = width * 1/40;

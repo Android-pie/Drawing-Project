@@ -64,7 +64,7 @@ void draw() {
   if ( mousePressed && eraser == true && pen == false && rectangle == false && mouseX> DrawingSpaceX  && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight) {   
     fill(black);
     stroke(black);
-    ellipse(mouseX, mouseY, CirclePenWidth, CirclePenHeight);
+    ellipse(mouseX, mouseY, eraserWidth, eraserHeight);
   }
 
   if ( mousePressed && eraser == false && pen == false && rectangle == true && mouseX> DrawingSpaceX  && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight) {   
