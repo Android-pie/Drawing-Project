@@ -1,9 +1,5 @@
 void PenColours() {
-  if ( mouseX>penbuttonX && mouseX<penbuttonX + penbuttonWidth && mouseY>penbuttonY && mouseY<penbuttonY+penbuttonHeight ) {
-    pen = true;
-    eraser = false;
-  }
-
+  
   if ( mouseX>BluebuttonX && mouseX<BluebuttonX + BluebuttonWidth && mouseY>BluebuttonY && mouseY<BluebuttonY+BluebuttonHeight ) {
     PenColour = Blue;
   }

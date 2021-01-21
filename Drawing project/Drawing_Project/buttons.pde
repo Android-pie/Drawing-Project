@@ -18,6 +18,8 @@ void buttons() {
   rect(YellowbuttonX, YellowbuttonY, BluebuttonWidth, BluebuttonHeight);
   fill(black);
   rect(RectanglebuttonX, RectanglebuttonY, BluebuttonWidth, BluebuttonHeight);
+  fill(black);
+  rect(CircleX, CircleY, BluebuttonWidth, BluebuttonHeight);
 
   // thickness buttons
  stroke(selection1);

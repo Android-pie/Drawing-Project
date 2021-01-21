@@ -4,5 +4,6 @@ void Eraser() {
     eraser = true;
     pen = false;
     rectangle = false;
+    circle = false;
   }
 }

@@ -4,5 +4,6 @@ void rectangle() {
     eraser = false;
     pen = false;
     rectangle = true;
+    circle = false;
   }
 }
