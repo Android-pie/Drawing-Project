@@ -77,12 +77,12 @@ void Varibles() {
   thicknessbuttonHeight = thicknessbuttonWidth;
   thicknessbuttonY = height * 1/2;
   thicknessbuttonX1 = width * 3/4;
-  thicknessbuttonX2 = thicknessbuttonX1 + thicknessbuttonWidth;
-  thicknessbuttonX3 = thicknessbuttonX2 + thicknessbuttonWidth;
-  thicknessbuttonX4 = thicknessbuttonX3 + thicknessbuttonWidth;
-  thicknessbuttonX5 = thicknessbuttonX4 + thicknessbuttonWidth;
-  thicknessbuttonX6 = thicknessbuttonX5 + thicknessbuttonWidth;
-  thicknessbuttonX7 = thicknessbuttonX6 + thicknessbuttonWidth;
-  thicknessbuttonX8 = thicknessbuttonX7 + thicknessbuttonWidth;
+  thicknessbuttonX2 = thicknessbuttonX1 + thicknessbuttonWidth + width * 1/850;
+  thicknessbuttonX3 = thicknessbuttonX2 + thicknessbuttonWidth + width * 1/850;
+  thicknessbuttonX4 = thicknessbuttonX3 + thicknessbuttonWidth + width * 1/850;
+  thicknessbuttonX5 = thicknessbuttonX4 + thicknessbuttonWidth + width * 1/850;
+  thicknessbuttonX6 = thicknessbuttonX5 + thicknessbuttonWidth + width * 1/850;
+  thicknessbuttonX7 = thicknessbuttonX6 + thicknessbuttonWidth + width * 1/850;
+  thicknessbuttonX8 = thicknessbuttonX7 + thicknessbuttonWidth + width * 1/850;
   //
 }

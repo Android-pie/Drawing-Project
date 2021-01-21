@@ -20,21 +20,28 @@ void buttons() {
   rect(RectanglebuttonX, RectanglebuttonY, BluebuttonWidth, BluebuttonHeight);
 
   // thickness buttons
-
+ stroke(selection1);
   fill(black);
   rect(thicknessbuttonX1, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  stroke(selection2);
   fill(black);
   rect(thicknessbuttonX2, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  stroke(selection3);
   fill(black);
   rect(thicknessbuttonX3, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  stroke(selection4);
   fill(black);
   rect(thicknessbuttonX4, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  stroke(selection5);
   fill(black);
   rect(thicknessbuttonX5, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  stroke(selection6);
   fill(black);
   rect(thicknessbuttonX6, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  stroke(selection7);
   fill(black);
   rect(thicknessbuttonX7, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  stroke(selection8);
   fill(black);
   rect(thicknessbuttonX8, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
 }
