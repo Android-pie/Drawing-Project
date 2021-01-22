@@ -1,7 +1,9 @@
 void buttons() {
   fill(black);
   rect(penbuttonX, penbuttonY, penbuttonWidth, penbuttonHeight);
+  
   rect(eraserX, eraserY, eraserWidth, eraserHeight);
+  
   fill(Blue);
   rect(BluebuttonX, BluebuttonY, BluebuttonWidth, BluebuttonHeight);
   fill(Green);
@@ -27,29 +29,34 @@ void buttons() {
   fill(black);
   rect(eraseAllX, eraseAllY, eraseAllbuttonWidth, eraseAllbuttonHeight);
 
+  //image
+  fill(black);
+  rect(img1X, img1Y, img1Width, img1Height);
+  fill(black);
+  rect(img2X, img2Y, img2Width, img2Height);
   // thickness buttons
  stroke(selection1);
   fill(black);
-  rect(thicknessbuttonX1, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  rect(thicknessbuttonX1, thicknessbuttonY1, thicknessbuttonWidth, thicknessbuttonHeight);
   stroke(selection2);
   fill(black);
-  rect(thicknessbuttonX2, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  rect(thicknessbuttonX2, thicknessbuttonY2, thicknessbuttonWidth, thicknessbuttonHeight);
   stroke(selection3);
   fill(black);
-  rect(thicknessbuttonX3, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  rect(thicknessbuttonX3, thicknessbuttonY3, thicknessbuttonWidth, thicknessbuttonHeight);
   stroke(selection4);
   fill(black);
-  rect(thicknessbuttonX4, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  rect(thicknessbuttonX4, thicknessbuttonY4, thicknessbuttonWidth, thicknessbuttonHeight);
   stroke(selection5);
   fill(black);
-  rect(thicknessbuttonX5, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  rect(thicknessbuttonX5, thicknessbuttonY5, thicknessbuttonWidth, thicknessbuttonHeight);
   stroke(selection6);
   fill(black);
-  rect(thicknessbuttonX6, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  rect(thicknessbuttonX6, thicknessbuttonY6, thicknessbuttonWidth, thicknessbuttonHeight);
   stroke(selection7);
   fill(black);
-  rect(thicknessbuttonX7, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  rect(thicknessbuttonX7, thicknessbuttonY7, thicknessbuttonWidth, thicknessbuttonHeight);
   stroke(selection8);
   fill(black);
-  rect(thicknessbuttonX8, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight);
+  rect(thicknessbuttonX8, thicknessbuttonY8, thicknessbuttonWidth, thicknessbuttonHeight);
 }

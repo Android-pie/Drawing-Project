@@ -18,15 +18,17 @@ float BackGroundX2, BackGroundY2, BackGroundWidth2, BackGroundHeight2;
 float BackGroundX3, BackGroundY3, BackGroundWidth3, BackGroundHeight3;
 float BackGroundWidth4, BackGroundHeight4;
 float thickness;
-float thicknessbuttonX1, thicknessbuttonY, thicknessbuttonWidth, thicknessbuttonHeight;
-float thicknessbuttonX2;
-float thicknessbuttonX3;
-float thicknessbuttonX4;
-float thicknessbuttonX5;
-float thicknessbuttonX6;
-float thicknessbuttonX7;
-float thicknessbuttonX8;
+float thicknessbuttonX1, thicknessbuttonY1, thicknessbuttonWidth, thicknessbuttonHeight;
+float thicknessbuttonX2, thicknessbuttonY2;
+float thicknessbuttonX3,thicknessbuttonY3;
+float thicknessbuttonX4,thicknessbuttonY4;
+float thicknessbuttonX5,thicknessbuttonY5;
+float thicknessbuttonX6,thicknessbuttonY6;
+float thicknessbuttonX7,thicknessbuttonY7;
+float thicknessbuttonX8,thicknessbuttonY8;
 float CirclePenWidth, CirclePenHeight;
+float img1X, img1Y, img1Width, img1Height;
+float img2X, img2Y, img2Width, img2Height;
 Boolean pen = false;
 Boolean circle = false;
 Boolean eraser = false;
@@ -34,6 +36,8 @@ Boolean eraseAll = false;
 Boolean rectangle = false;
 color black = #000000, PenColour = #FFFFFF, Blue = #59A4E3, White = #FFFFFF, Green = #37C95A, Red = #DB1414, Orange = #FFA51C, Purple = #6E00D1, Yellow = #F0DF61, LightBlue = #BC08A4;
 color selection1 = #000000, selection2 = #000000, selection3 = #000000, selection4 = #000000, selection5 = #000000, selection6 = #000000, selection7 = #000000, selection8 = #000000;
+PImage img1;
+PImage img2;
 void setup() {
   fullScreen();
   Varibles();
@@ -56,8 +60,9 @@ void draw() {
   rect(BackGroundX3, BackGroundY3, BackGroundWidth4, BackGroundHeight4);
   buttons();
   if ( mousePressed && eraser == false && pen == true && rectangle == false && mouseX>DrawingSpaceX && mouseX<DrawingSpaceX+ DrawingSpaceWidth && mouseY>DrawingSpaceY && mouseY<DrawingSpaceY+DrawingSpaceHeight ) {
-    stroke(PenColour);
+    
     strokeWeight(thickness);
+    stroke(PenColour);
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
 
@@ -78,6 +83,7 @@ void draw() {
     stroke(PenColour);
     ellipse(mouseX, mouseY, CirclePenWidth, CirclePenHeight);
   }
+  
 }
 
 void mousePressed() {
@@ -88,5 +94,6 @@ void mousePressed() {
   circlePen();
   penThickness();
   EraseAll();
+  Image();
   println("eraser", eraser, "pen", pen, "rectangle", rectangle);
 }
