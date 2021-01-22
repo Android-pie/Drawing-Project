@@ -2,7 +2,7 @@ void buttons() {
   fill(black);
   rect(penbuttonX, penbuttonY, penbuttonWidth, penbuttonHeight);
   
-  rect(eraserX, eraserY, eraserWidth, eraserHeight);
+  rect(eraserX, eraserY, eraserbuttonWidth, eraserbuttonHeight);
   
   fill(Blue);
   rect(BluebuttonX, BluebuttonY, BluebuttonWidth, BluebuttonHeight);

@@ -42,7 +42,8 @@ void Varibles() {
   //eraserbuttonHeight = width*1/15;
   //
   //
-  RectangleWidth = RectangleHeight = penbuttonWidth = penbuttonHeight = eraserWidth = eraserHeight = eraserbuttonWidth = eraserbuttonHeight = eraseAllbuttonWidth = eraseAllbuttonHeight =  height * 1/20;
+  RectangleWidth = RectangleHeight = penbuttonWidth = penbuttonHeight =  eraserbuttonWidth = eraserbuttonHeight = eraseAllbuttonWidth = eraseAllbuttonHeight =  height * 1/20;
+  eraserHeight = eraserbuttonWidth =  CirclePenWidth = CirclePenHeight = RectangleWidth = RectangleHeight = height * 1/20;
   //
   //
   //eraserWidth = width * 1/15;
