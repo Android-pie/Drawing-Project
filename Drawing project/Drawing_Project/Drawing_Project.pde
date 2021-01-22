@@ -29,6 +29,7 @@ float thicknessbuttonX8,thicknessbuttonY8;
 float CirclePenWidth, CirclePenHeight;
 float img1X, img1Y, img1Width, img1Height;
 float img2X, img2Y, img2Width, img2Height;
+float QuitX, QuitY, QuitWidth, QuitHeight;
 Boolean pen = false;
 Boolean circle = false;
 Boolean eraser = false;
@@ -95,5 +96,6 @@ void mousePressed() {
   penThickness();
   EraseAll();
   Image();
+  Quit();
   println("eraser", eraser, "pen", pen, "rectangle", rectangle);
 }

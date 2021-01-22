@@ -28,6 +28,10 @@ void buttons() {
   //Erase All
   fill(black);
   rect(eraseAllX, eraseAllY, eraseAllbuttonWidth, eraseAllbuttonHeight);
+  
+  //Quit
+  fill(black);
+  rect(QuitX, QuitY, QuitWidth, QuitHeight);
 
   //image
   fill(black);

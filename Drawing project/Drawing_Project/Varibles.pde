@@ -29,7 +29,8 @@ void Varibles() {
   //penbuttonHeight = height * 1/15;
   //
   //
-
+ 
+  //
   //eraserY =  penbuttonY;
   //
   //
@@ -85,6 +86,10 @@ void Varibles() {
 
   //CircleY = height * 3.35/5;
   CirclePenWidth = CirclePenHeight = height * 1/20;
+   QuitX = width * 4.85/5;
+  QuitY = height * 0.05/5;
+  QuitWidth =  BluebuttonWidth;
+  QuitHeight = QuitWidth;
   //
 
   //eraseAllY = height *3.35/5;
