@@ -83,7 +83,10 @@ void Varibles() {
   //
   BluebuttonWidth = BluebuttonHeight = penbuttonWidth;
   //
-
+  thicknessLableX = width * 0.25/5;
+  thicknessLableY = height * 4.25/5;
+  thicknessLableWidth = width * 3.25/10;
+  thicknessLableHeight = thicknessLableWidth/15;
   //CircleY = height * 3.35/5;
   CirclePenWidth = CirclePenHeight = height * 1/20;
    QuitX = width * 4.85/5;
