@@ -1,3 +1,16 @@
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
+
+Minim minim;
+
+int numberOfSongs = 1;
+int currentSong = numberOfSongs - numberOfSongs; 
+AudioPlayer[] song= new AudioPlayer[numberOfSongs]; //"Song One"
+AudioMetaData[] songMetaData = new AudioMetaData[numberOfSongs]; //"Song Meta One"
 
 float DrawingSpaceX, DrawingSpaceY, DrawingSpaceWidth, DrawingSpaceHeight; 
 float  penbuttonX, penbuttonY, penbuttonWidth, penbuttonHeight;
@@ -44,6 +57,9 @@ PFont lableFont;
 
 void setup() {
   fullScreen();
+  minim = new Minim(this); 
+  songs();
+  song[currentSong].play();
   Varibles();
   fill(black);
   rect(DrawingSpaceX, DrawingSpaceY, DrawingSpaceWidth, DrawingSpaceHeight);
@@ -89,7 +105,7 @@ void draw() {
     stroke(PenColour);
     ellipse(mouseX, mouseY, CirclePenWidth, CirclePenHeight);
   }
-  if(rectangle == true || circle == true){
+  if (rectangle == true || circle == true) {
     StrokeColours();
   }
 }
@@ -104,5 +120,6 @@ void mousePressed() {
   EraseAll();
   Image();
   Quit();
+  StrokeColours();
   println("eraser", eraser, "pen", pen, "rectangle", rectangle);
 }
