@@ -1,3 +1,3 @@
 void songs() { 
-  song[0] = minim.loadFile("../music/marcus.mp3");
+  song[0] = minim.loadFile("../music/groove.mp3");
 }
