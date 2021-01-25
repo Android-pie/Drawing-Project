@@ -44,6 +44,10 @@ float img1X, img1Y, img1Width, img1Height;
 float img2X, img2Y, img2Width, img2Height;
 float QuitX, QuitY, QuitWidth, QuitHeight;
 float thicknessLableX, thicknessLableY, thicknessLableWidth, thicknessLableHeight;
+float ampvol;
+float VolUpX, VolUpY, VolUpWidth, VolupHeight;
+float VolDownX, VolDownY, VolDownWidth, VolDownHeight;
+float muteX, muteY, muteWidth, muteHeight;
 Boolean pen = false;
 Boolean circle = false;
 Boolean eraser = false;
@@ -60,6 +64,7 @@ void setup() {
   minim = new Minim(this); 
   songs();
   song[currentSong].play();
+  song[currentSong].loop();
   Varibles();
   fill(black);
   rect(DrawingSpaceX, DrawingSpaceY, DrawingSpaceWidth, DrawingSpaceHeight);
@@ -84,6 +89,9 @@ void draw() {
   IfStatements();
 }
 
+void keyPressed() {
+  vol();
+}
 void mousePressed() {
   PenColours();
   Eraser();
@@ -95,5 +103,6 @@ void mousePressed() {
   Image();
   Quit();
   StrokeColours();
+  vol();  
   println("eraser", eraser, "pen", pen, "rectangle", rectangle);
 }

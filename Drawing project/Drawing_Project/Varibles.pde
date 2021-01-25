@@ -24,32 +24,18 @@ void Varibles() {
   //
   //
   penbuttonX = width * 2.2/5;
-  //penbuttonY = height * 3.35/5;
-  //penbuttonWidth = width * 1/15;
-  //penbuttonHeight = height * 1/15;
-  //
-  //
  
   //
-  //eraserY =  penbuttonY;
   //
-  //
-  // RectanglebuttonX = penbuttonX; 
-
-  // RectanglebuttonY = height *3.35/5;
-  //
-  //
-  //eraserbuttonWidth = penbuttonWidth;
-  //eraserbuttonHeight = width*1/15;
-  //
+  
+    //
   //
   RectangleWidth = RectangleHeight = penbuttonWidth = penbuttonHeight =  eraserbuttonWidth = eraserbuttonHeight = eraseAllbuttonWidth = eraseAllbuttonHeight =  height * 1/20;
   eraserHeight = eraserbuttonWidth =  CirclePenWidth = CirclePenHeight = RectangleWidth = RectangleHeight = height * 1/20;
   //
   //
-  //eraserWidth = width * 1/15;
-  //eraserHeight = eraserWidth;
-  //
+  
+    //
   //
   BluebuttonX = width * 0.1/5;
   //
@@ -87,16 +73,16 @@ void Varibles() {
   thicknessLableY = height * 4.25/5;
   thicknessLableWidth = width * 3.25/10;
   thicknessLableHeight = thicknessLableWidth/15;
-  //CircleY = height * 3.35/5;
-  CirclePenWidth = CirclePenHeight = height * 1/20;
+  
+   CirclePenWidth = CirclePenHeight = height * 1/20;
    QuitX = width * 4.85/5;
   QuitY = height * 0.05/5;
   QuitWidth =  BluebuttonWidth;
   QuitHeight = QuitWidth;
   //
-
-  //eraseAllY = height *3.35/5;
-
+  ampvol = 10.0;
+  
+  
   //
   thickness = width * 1/800;
   thicknessbuttonWidth = width * 1/40;
@@ -110,14 +96,22 @@ void Varibles() {
   thicknessbuttonX6 = width * 1.3/5;
   thicknessbuttonX7 = width * 1.5/5;
   thicknessbuttonX8 = width * 1.7/5;
-  /* thicknessbuttonX2 = thicknessbuttonX1 + thicknessbuttonWidth + width * 1/850;
-   thicknessbuttonX3 = thicknessbuttonX2 + thicknessbuttonWidth + width * 1/850;
-   thicknessbuttonX4 = thicknessbuttonX3 + thicknessbuttonWidth + width * 1/850;
-   thicknessbuttonX5 = thicknessbuttonX4 + thicknessbuttonWidth + width * 1/850;
-   thicknessbuttonX6 = thicknessbuttonX5 + thicknessbuttonWidth + width * 1/850;
-   thicknessbuttonX7 = thicknessbuttonX6 + thicknessbuttonWidth + width * 1/850;
-   thicknessbuttonX8 = thicknessbuttonX7 + thicknessbuttonWidth + width * 1/850;   
-   //*/
+  
+  VolUpX = width * 2.9/5;
+  VolUpY =  height * 3.5/5;
+  VolUpWidth = width * 1/40;
+  VolupHeight = VolUpWidth;
+  
+  VolDownX = width * 3.1/5;
+  VolDownY =  height * 3.5/5;
+  VolDownWidth = width * 1/40;
+  VolDownHeight = VolDownWidth;
+  
+  muteX = width * 3.3/5;
+  muteY =  height * 3.5/5;
+  muteWidth = width * 1/40;
+  muteHeight = muteWidth;
+  
   img1 = loadImage("Canada.JPG");
   img2 = loadImage("bird3.jpg");
   img1X = width * 2/5;

@@ -63,4 +63,8 @@ void buttons() {
   stroke(selection8);
   fill(black);
   rect(thicknessbuttonX8, thicknessbuttonY8, thicknessbuttonWidth, thicknessbuttonHeight);
+  rect(VolUpX, VolUpY, VolUpWidth, VolupHeight);
+  rect(VolDownX, VolDownY, VolDownWidth, VolDownHeight);
+  rect(muteX, muteY, muteWidth, muteHeight);
+  
 }
